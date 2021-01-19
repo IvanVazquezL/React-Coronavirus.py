@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+/* Start Header */
+header .navbar-brand {
+  padding-left: 8rem;
+  padding-top: 1rem;
+  font-size: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  background-color: #667fe1;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .about {
+  padding-right: 8rem;
+  padding-top: 0.8rem;
 }
+
+header a:hover {
+  color: white;
+}
+
+/* End Header */
+
+/* Start Section 1 */
+    .section-1 {
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    .section-1 a{
+      color: DarkBlue;
+    }
+
+    /* End Section 1 */
+    .section-2{
+      background-color:#F5F6F9 ;
+    }
+
+    /* Start Section 2 */
+    .section-2 .boxes{
+      background-color:white;
+      border-radius: 25px;
+    }
+
+    .section-2 .sizeChart{
+      width:500px !important;
+      height:400px !important;
+    }
+
+    .section-2 canvas{
+    margin:auto;
+    }
+    /* End Section 2 */
+
+    /* Start Section 3 */
+    .section-3 .boxes {
+      background-color: #F5F6F9;
+      border-radius: 25px;
+    }
+
+    .section-3 img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .section-3 .textIvan{
+      text-align:right;
+    }
+
+    /* End Section 3 */
+
+  /* Start Footer */
+  footer{
+    background-color:#161D2D;
+    color:white;
+  }
+  /* End Footer */
+
+    @media only screen and (max-width: 768px) {
+      header .navbar-brand {
+        padding-left: 1rem;
+      }
+
+      header .about {
+        padding-right: 1rem;
+      }
+
+      .section-2 .sizeChart{
+        width:100% !important;
+        height:300px !important;
+        padding-left: 0;
+      }
+
+      .section-2 .chartsDiv{
+        position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+      }
+
+      .section-2 .textChart{
+        padding-top: 1.5rem;
+        font-family: 'Kumbh Sans', sans-serif;
+        text-align: left !important;
+      }
+
+      .section-2 h6 {
+        line-height: 1.6;
+      }
+
+
+    .section-3 .textDavid{
+      text-align:center;
+      padding-top:1rem;
+    }
+
+    .section-3 .textIvan{
+      text-align:center;
+      padding-top:1rem;
+    }
+
+    .section-3{
+      padding:3vmin;
+    }
+
+    .section-3 .centername {
+      font-family: 'Kumbh Sans', sans-serif;
+      text-align: left !important;
+    }
+
+    .centername h6 {
+      line-height: 1.6;
+    }
+
+    }
